@@ -1,0 +1,514 @@
+@import url("./responsive.css");
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    font-family: "Montserrat", sans-serif;
+}
+header{
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+}
+header .header_logo{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav_bar_none{
+    display: none !important;
+}
+header .nav_bar{
+    width: 50%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+}
+header .bar{
+    width: 50px;
+    height: 70%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav_ul {
+    width: 100vw;
+    height: 70vh;
+    background-color: rgba(255, 255, 255, 0.801);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute !important;
+}
+.any{
+    animation: any 1s   ease-in forwards ;
+}
+@keyframes any {
+    0%{
+        top: -1000px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+.top{
+    position: absolute;
+    top: -1000px !important;
+}
+.nav_ul ul{
+    flex-direction: column;
+}
+header .header_logo .logo{
+    width: 50%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .header_logo .logo img{
+    width: 100%;
+}
+header nav{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header nav ul ,.nav_ul  ul{
+    display: flex;
+    width: 80%;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+header nav ul li ,.nav_ul  ul li{
+    list-style: none;
+    padding: 15px;
+}
+header nav ul li select{
+    width: 100%;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover{
+        color: rgb(255, 8, 0);
+    
+        }
+}
+header nav ul li select option{
+    color: black;
+}
+header nav ul li a ,.nav_ul  ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight:500;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover{
+    color: rgb(255, 8, 0);
+
+    }
+}
+header nav ul  a img{
+    width: 20px;
+    height: 20px;
+}
+header nav ul li  .Active ,.nav_ul  ul li .Active{
+    color: rgb(255, 8, 0);
+}
+
+.hero{
+    width: 100vw;
+    min-height: 90vh;
+    background-image: url("../images/slider-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero .container{
+    width: 80%;
+    height: 80%; 
+    display: flex;
+    align-items: center;
+}
+.hero .container .row{
+    width: 47%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.hero .container .row h1{
+    font-size: 55px;
+    font-weight: 800;
+    font-family: "Playfair Display", serif;
+    color: rgb(1, 53, 53);
+}
+.hero .container .row h1 span{
+    color: rgb(255, 8, 0);
+}
+.hero .container .row p{
+    font-size: 20px;
+    width: 95%;
+}
+.hero .container .row button{
+    width: 140px;
+    height:50px;
+    border: none;
+    background-color: rgba(255, 8, 0, 0.795);
+    color: white;
+    font-size: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+    &:hover{
+        background-color: transparent;
+        border: 1px solid  rgba(255, 8, 0, 0.795);
+        color:  rgba(255, 8, 0, 0.795);
+    }
+}
+.Shop{
+    width: 100vw;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+
+}
+.Shop .Shop_heading{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 15px;
+}
+.Shop .Shop_heading h2{
+    gap: 10px;
+    font-size: 45px;
+    font-size: 500;
+    color: rgb(1, 46, 46);
+}
+.Shop .Shop_heading span{
+    display: block;
+    background-color:  rgba(255, 8, 0, 0.795);
+    width: 5%;
+    height: 5px;
+    margin: 10px;
+}
+.Shop .Shop_cards{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.Shop .Shop_cards .card{
+    max-width:400px;
+    min-height: 250px;
+    border: 1px solid ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    background-color: #002c3e;
+    border-radius: 10px;
+    border: none;
+}
+
+.Shop .Shop_cards .card h3{
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+}
+.Shop .Shop_cards .card img{
+    width: 100px;
+}
+.Shop .Shop_cards .card  p{
+    width: 80%;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+.Arrivals{
+    width: 100vw;
+    min-height: 80vh;
+    background-color: #d4ced0;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Arrivals .Arrivals_img{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+.Arrivals .Arrivals_img .img{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Arrivals .Arrivals_img .img img{
+    width: 100%;
+    height: 100%;
+}
+.Arrivals .Arrivals_text{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Arrivals .Arrivals_text .text{
+    width: 80%;
+    height: 60%;
+}
+.Arrivals .Arrivals_text .text h3{
+    font-size: 40px;
+    color: rgb(3, 65, 65);
+}
+.Arrivals .Arrivals_text .text  p{
+    width: 80%;
+    font-size: 25px;
+    font-weight: 100;
+}
+.Arrivals .Arrivals_text .text button{
+    width: 120px;
+    height: 40px;
+    background-color:rgba(255, 8, 0, 0.932) ;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover{
+        background-color: transparent;
+        color: rgba(255, 8, 0, 0.932);
+        border: 1px solid rgba(255, 8, 0, 0.932);
+    }
+}
+.Products{
+    width: 100vw;
+    min-height: 100vh;
+  
+    display: flex;
+    flex-direction: column;
+}
+.Products .Product_heading{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Products .Product_heading h2{
+    font-size: 40px;
+    color: black;
+    font-weight: 700;
+}
+.Products .Product_heading h2 span{
+    color: rgba(255, 8, 0, 0.932);
+}
+.Products .Product_heading .Product_heading_span{
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color:rgba(255, 8, 0, 0.932);
+    
+}
+.Products .Product_cards{
+    width: 100%;
+    min-height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Products .Product_cards .cards{
+    width: 80%;
+    min-height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Products .Product_cards .cards .card{
+    min-width: 300px;
+    height: 370px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    box-shadow: 10px 2px 10px 0px black;
+}
+.Products .Product_cards .cards .card .card_img{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+.Products .Product_cards .cards .card .card_img .img{
+    width: 80%;
+    height: 90%;
+}
+.Products .Product_cards .cards .card .card_img .img img{
+    width: 100%;
+    height: 100%;
+}
+.Products .Product_cards .cards .card  .card_price{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Products .Product_cards .cards .card  .card_price span{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    margin: 10px;
+}
+.Products .Product_cards .btn{
+    width: 80%;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Products .Product_cards .btn button{
+    width: 190px;
+    height: 50px;
+    margin: 10px;
+    background-color:rgba(255, 8, 0, 0.932);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 20px;
+    &:hover{
+        background-color: transparent;
+        border: 1px solid rgba(255, 8, 0, 0.932);
+        color: rgba(255, 8, 0, 0.932);
+    }
+}
+footer{
+    width: 100vw;
+    min-height: 60vh;
+    background-color: #002c3e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .footer_item{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+footer .footer_item .item{
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+}
+footer .footer_item .item #logo{
+    width: 90%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+footer .footer_item .item .item_heading{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+footer .footer_item .item .item_heading h3{
+    color: white;
+}
+footer .footer_item .item #logo img{
+    width: 100%;
+}
+footer .footer_item .item  p{
+    font-size: 16px;
+    padding: 10px;
+    color: white;
+    font-weight: 100;
+    width: 100%;
+}
+footer .footer_item .item  p span{
+    font-weight: 900;
+}
+.footer_item .item .item_heading h3{
+    font-size: 30px;
+}
+.footer_item .item  nav{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.footer_item .item  nav ul li{
+    list-style: none;
+    padding: 10px;
+}
+.footer_item .item  nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.footer_item .item  nav input{
+    max-width: 80%;
+    height: 40px;
+    padding: 10px;
+    outline: none;
+}
+.footer_item .item  nav  button{
+    width:200px;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(255, 8, 0);
+    color: white;
+    border: none;
+    cursor: pointer;
+}

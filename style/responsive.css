@@ -1,0 +1,45 @@
+@media screen and (max-width: 1000px) {
+    header nav  {
+        display: none !important;
+    }
+    header .header_logo{
+        width: 60% !important;
+    }
+    header .nav_bar{
+        display: flex !important;
+    }
+    .hero .container .row{
+        width: 60% !important;
+    }
+    .hero .container .row h1{
+        font-size: 40px !important;
+    }
+    .hero .container .row p{
+        font-size: 18px !important;
+    }
+    .hero .container .row  button{
+        width: 100px !important;
+        height: 40px !important;
+        font-size: 18px !important;
+    }
+    .Arrivals{  
+        flex-direction: column ;
+        gap: 20px;
+    }
+    .Arrivals .Arrivals_img .img{
+        width: 100% !important;
+    }
+    .Arrivals .Arrivals_text .text {
+        width: 100% !important;
+    }
+    .Arrivals .Arrivals_text .text  h3{
+        font-size: 30px !important;
+    }
+    .Arrivals .Arrivals_text .text p{
+        font-size: 17px !important;
+    }
+    .Arrivals .Arrivals_text .text button{
+        width: 100px !important;
+        margin-bottom: 10px;
+    }
+}
