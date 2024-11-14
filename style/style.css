@@ -178,6 +178,7 @@ header nav ul li  .Active ,.nav_ul  ul li .Active{
     font-size: 20px;
     transition: 0.5s;
     cursor: pointer;
+    margin:10px;
     &:hover{
         background-color: transparent;
         border: 1px solid  rgba(255, 8, 0, 0.795);
